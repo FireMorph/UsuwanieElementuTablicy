@@ -2,6 +2,8 @@
  * Created by Mac on 09.02.15.
  * Time: 21:26
  */
+// Lepiej to rozbic na dwie metody z ktorych jedna tylko wyszukuje element, a druga usuwa podany indeks w podanej tablicy
+
 public class Glowna {
 
     public static void main(String[] args) {
