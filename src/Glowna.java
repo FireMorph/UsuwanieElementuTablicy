@@ -12,12 +12,13 @@ public class Glowna {
 
         for (int x : tablica)
             System.out.print(x + " ");
-        System.out.println();
+        System.out.println("\nRozmiar tablicy: " + tablica.length);
 
         tablica = new Glowna().metoda(tablica, element);
 
         for (int x : tablica)
             System.out.print(x + " ");
+        System.out.println("\nRozmiar tablicy po wywolaniu metody: " + tablica.length);
     }
 
     public int[] metoda(int[] tab, int szukana) {
@@ -31,7 +32,7 @@ public class Glowna {
         for (int i = 0; i < tab.length; i++)
             if (tab[i] == szukana) {
                 indeks = i;
-                System.out.println("Indeks elementu szukanego: " + indeks);
+                System.out.println("Indeks elementu szukanego: [" + indeks + "]");
                 q = 0;
 
                 temp = new int[tab.length - 1];
